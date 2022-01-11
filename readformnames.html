@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function readValues()
+{
+	stu_name=form_reg.name.value;  //read name from the form and store  in the variable
+	stu_password=document.form_reg.pwd.value;  //read password from the form and store in the variable
+	document.writeln("Hello"+stu_name);  //print on the browser
+	document.write("<br>");  //for spaces
+	document.write(stu_password);  //output
+}
+</script>
+</head>
+<body>
+<form name="form_reg"  action="serveraddress">
+name:<input type="text"  name="name" value="cse"><br>
+password:<input type="password" name="pwd" value="123456">
+<br>
+<input type="button'" value="click here" onclick=" readValues()">
+</body>
+</html>
